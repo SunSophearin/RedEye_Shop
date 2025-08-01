@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.Oswald{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
