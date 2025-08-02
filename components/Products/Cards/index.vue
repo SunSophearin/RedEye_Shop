@@ -12,8 +12,8 @@ const chip = computed(() => ({ backgroundColor: color.value }));
 
 <template>
   <!-- class="rounded-lg border border-gray-200 bg-white p-1 md:p-2 shadow-sm dark:border-[#0a0a0a] dark:bg-[#0a0a0a]" -->
-  <div class="rounded-lg p-1 md:p-2">
-    <div class="w-full rounded-t-2xl overflow-hidden relative">
+  <div class="rounded-lg p-1 md:p-2"  >
+    <div class="w-full rounded-t-2xl overflow-hidden relative" v-motion-slide-bottom :duration="1000">
       <NuxtLink
         :to="{
           path: `/${props.product.categoryItem.slug}/${props.product.slug}`,

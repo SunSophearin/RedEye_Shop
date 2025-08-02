@@ -11,6 +11,7 @@
         :product="product"
         class="w-full"
       />
+      <!-- <UITestAnimation /> -->
     </div>
     <!-- </ClientOnly> -->
   </div>

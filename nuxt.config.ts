@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@formkit/auto-animate/nuxt',
     '@nuxt/image',
+    '@vueuse/motion/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   components: true,
@@ -53,5 +54,6 @@ export default defineNuxtConfig({
       'state',
       'stores',
     ]
-  }
+  },
+
 })

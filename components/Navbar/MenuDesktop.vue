@@ -61,7 +61,7 @@ const navigationMenu = computed(() =>
         <div
           class="col-span-1 lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
         >
-          <div
+          <div v-motion-pop
             v-for="child in item.children"
             :key="child.label"
             class="bg-gradient-to-br from-white dark:from-[#262626] to-gray-100 dark:to-black hover:from-gray-100 dark:hover:from-gray-400 hover:to-white dark:hover:to-black transition rounded-lg p-5 shadow group"
