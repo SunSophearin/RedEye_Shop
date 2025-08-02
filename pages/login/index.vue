@@ -85,12 +85,12 @@
 <script setup lang="ts">
 const config=useRuntimeConfig()
 const loginWithGoogle = () => {
-  // window.location.href = "http://localhost:8080/oauth2/authorization/google";
+  // window.location.href = "https://red-eye-shop.vercel.app/oauth2/authorization/google";
   window.location.href = `${config.public.API_BASE_URL}/oauth2/authorization/google`;
 };
 
 const loginWithFacebook = () => {
-  // window.location.href = "http://localhost:8080/oauth2/authorization/facebook";
+  // window.location.href = "https://red-eye-shop.vercel.app/oauth2/authorization/facebook";
   window.location.href = `${config.public.API_BASE_URL}/oauth2/authorization/facebook`;
 };
 // const { isOpenCart } = useAddCart()
