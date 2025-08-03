@@ -47,7 +47,8 @@ function handleAddToCart() {
 <template>
   <div  v-show="productStore.product">
     <div class="product-detail">
-      <ProductDetailBreadcrumb
+      <ProductDetailBreadcrumb 
+      v-if="productStore.product"
         :title="productStore.product?.name || 'No Product Name'"
         class="pb-6 pt-3 md:py-8 px-4 md:px-0 line-clamp-3"
       />
