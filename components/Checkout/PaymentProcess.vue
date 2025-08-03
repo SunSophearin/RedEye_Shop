@@ -28,7 +28,10 @@
         <!-- <div class="text-center text-blue-600 text-2xl font-mono">
             ⏳ {{ formattedCountdown }}
           </div> -->
-          <p class="absolute top-[161px] md:top-[200px] left-1/3 transform -translate-x-1/5  text-center text-gray-600 text-sm font-bold">$ {{ total }}</p>
+          <p class="absolute top-[161px] md:top-[200px] left-1/3 transform -translate-x-1/5 text-center text-gray-600 text-sm font-bold top-price">
+          $ {{ total }}
+          </p>
+
         <img
             :src="qrImageUrl"
             alt="QR Code"
@@ -159,3 +162,17 @@ watch(paymentStatus, (newStatus) => {
 });
 onBeforeUnmount(paymentStore.stopAllListeners);
 </script>
+<style secoped>
+@media (min-width: 376px) and (max-width: 428px) {
+  .top-price {
+    top: 170px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .top-price {
+    top: 130px !important;
+  }
+}
+
+</style>
