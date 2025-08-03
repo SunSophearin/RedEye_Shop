@@ -14,7 +14,7 @@ const route = useRoute()
 const router = useRouter()
 const cartStore = useCartStore()
 const { cartItems } = storeToRefs(cartStore) // ✅ REACTIVE BINDING
-
+const total:any= useState('total', () => 0)
 const formatPrice = (amount?: number | null) =>
   typeof amount === 'number' && !isNaN(amount)
     ? `$${amount.toFixed(2)}`
@@ -37,7 +37,7 @@ const FirstPurchase = computed(() => {
   return 0;
 });
 
-const total = computed(() => subtotal.value - FirstPurchase.value);
+ total.value = computed(() => subtotal.value - FirstPurchase.value);
 
 
 const updateQuantity = async ({

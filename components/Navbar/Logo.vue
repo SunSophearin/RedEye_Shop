@@ -18,7 +18,7 @@ onMounted(() => {
 <template>
   <div class="flex md:items-center md:justify-center">
     <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse cursor-pointer">
-      <NuxtImg loading="lazy" v-if="mounted" :src="imgtoggle" alt="" class="w-18 md:w-32 object-cover" />
+      <NuxtImg loading="lazy" v-if="mounted" :src="imgtoggle" alt="" class="w-18 md:ml-13 lg:ml-0 md:w-20 lg:w-32 object-cover" />
     </NuxtLink>
   </div>
 </template>
