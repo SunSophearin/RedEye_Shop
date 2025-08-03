@@ -15,7 +15,9 @@
     </UButton>
 
     <UModal
-      
+      v-if="
+        qrImageUrl && paymentStatus !== 'ERROR' && paymentStatus !== 'EXPIRED'
+      "
       v-model:open="clickPaymentProcess"
       title="ស្កេន QR Code ដើម្បីបង់ប្រាក់ "
       :description="` ${formattedCountdown} វិនាទី`"
