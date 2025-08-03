@@ -29,7 +29,7 @@ const menubar = computed(() =>
 </script>
 
 <template>
-  <MotionGroup preset="slideVisibleLeft" :duration="500">
+  <MotionGroup preset="slideVisibleLeft" :duration="390">
     <div>
       <UNavigationMenu
         orientation="vertical"

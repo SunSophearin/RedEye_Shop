@@ -17,7 +17,7 @@ const items = [
     >
       <NuxtImg
         :src="item"
-        class="rounded-lg w-full h-[150px] md:h-[350px] lg:h-[480px] object-fill object-center"
+        class="rounded-lg w-full h-[170px] md:h-[350px] lg:h-[480px] object-fill object-center"
       />
     </UCarousel>
   </div>

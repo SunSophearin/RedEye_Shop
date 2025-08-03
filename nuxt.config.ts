@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/icons/logo_dark-removebg-preview.png' }
+      ]
+    }
+  },
   devtools: { enabled: true },
   modules: [
     '@nuxt/ui',
