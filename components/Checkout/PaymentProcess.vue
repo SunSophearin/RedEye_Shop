@@ -165,7 +165,7 @@ onBeforeUnmount(paymentStore.stopAllListeners);
 <style secoped>
 @media (min-width: 376px) and (max-width: 428px) {
   .top-price {
-    top: 170px !important;
+    top: 168px !important;
   }
 }
 
