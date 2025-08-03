@@ -26,7 +26,7 @@
         <!-- <div class="text-center text-blue-600 text-2xl font-mono">
             ⏳ {{ formattedCountdown }}
           </div> -->
-          <p class="absolute top-[159px] md:top-[200px] left-1/3 transform -translate-x-1/5  text-center text-gray-600 text-sm font-bold">$ {{ total }}</p>
+          <p class="absolute top-[161px] md:top-[200px] left-1/3 transform -translate-x-1/5  text-center text-gray-600 text-sm font-bold">$ {{ total }}</p>
         <img
             :src="qrImageUrl"
             alt="QR Code"
