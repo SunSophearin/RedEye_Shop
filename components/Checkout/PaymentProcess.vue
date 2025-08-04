@@ -47,7 +47,7 @@
           <img
             :src="qrImageUrl"
             alt="QR Code"
-            class="border-2 border-blue-200 rounded-lg shadow-md w-56 h-56 object-contain"
+            class="rounded-lg shadow-md w-56 h-56 object-contain"
           />
         </div> -->
       </template>
